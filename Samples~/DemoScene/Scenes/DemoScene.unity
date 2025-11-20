@@ -1874,6 +1874,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8ddc07fc265bfd9469334f3e3b794038, type: 3}
   m_PrefabInstance: {fileID: 864372402}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1076905374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1076905376}
+  - component: {fileID: 1076905375}
+  m_Layer: 0
+  m_Name: VERADemo_AutoSubmitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1076905375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076905374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a06d536dcb7b554bbd84f58186d8ef6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delayBeforeSubmit: 10
+--- !u!4 &1076905376
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1076905374}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1097204347
 GameObject:
   m_ObjectHideFlags: 0
@@ -2526,7 +2571,7 @@ GameObject:
   - component: {fileID: 1549368628}
   - component: {fileID: 1549368627}
   m_Layer: 0
-  m_Name: VERACube
+  m_Name: VERADemo_Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3200,44 +3245,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1974589000}
-  - component: {fileID: 1974588999}
   - component: {fileID: 1974589001}
-  - component: {fileID: 1974589002}
   m_Layer: 0
-  m_Name: VERALogger
+  m_Name: VERADemo_TransformsLogger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1974588999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1974588998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e63c53de868b28941947d5fedf7fe7ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  apiKey: 
-  experimentUUID: 
-  siteUUID: 
-  overrideActiveSite: 0
-  baseFilePath: 
-  dataPath: 
-  genericDataPath: 
-  onLoggerInitialized:
-    m_PersistentCalls:
-      m_Calls: []
-  onBeginFileUpload:
-    m_PersistentCalls:
-      m_Calls: []
-  onFileUploadExited:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &1974589000
 Transform:
   m_ObjectHideFlags: 0
@@ -3268,19 +3283,6 @@ MonoBehaviour:
   mainCamera: {fileID: 72677677}
   leftController: {fileID: 72677676}
   rightController: {fileID: 72677675}
---- !u!114 &1974589002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1974588998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a06d536dcb7b554bbd84f58186d8ef6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayBeforeSubmit: 10
 --- !u!1 &2143227304
 GameObject:
   m_ObjectHideFlags: 0
@@ -3430,6 +3432,7 @@ SceneRoots:
   - {fileID: 1161956540}
   - {fileID: 1549368631}
   - {fileID: 1974589000}
+  - {fileID: 1076905376}
   - {fileID: 1578397236}
   - {fileID: 501499333}
   - {fileID: 1838844515}
